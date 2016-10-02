@@ -1,0 +1,64 @@
+# This is to be used more as a reference than anything. Just a list of files that I like to have installed with brew on Mac
+# at the bottom, the command for installing brew itself, and the commands to install everything at once
+# brew
+
+ack
+babl
+coreutils
+ffmpeg
+findutils
+gawk
+grep
+lame
+libav
+neovim
+moreutils
+node
+openssl
+p7zip
+perl
+pv
+python
+python3
+readline
+rename
+ruby
+speedtest_cli
+thefuck
+trash
+vim
+youtube-dl
+tmux
+mutt
+the_silver_searcher
+aria2
+autojump
+wget
+
+tap caskroom/fonts
+tap caskroom/cask
+
+#cask
+
+iterm2-beta
+google-drive
+suspicious-package
+google-chrome
+skype
+vlc-nightly
+flux
+caffeine
+alfred
+clamxav
+mou
+cheatsheet
+knockknock
+blockblock
+appcleaner
+
+##########
+# copy these commands to a .sh file or into the command line
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install ackbabl coreutils ffmpeg findutils gawk grep lame libav neovim moreutils node openssl p7zip perl pv python python3 readline rename ruby speedtest_cli thefuck trash vim youtube-dl tmux mutt the_silver_searcher aria2 autojump wget
+brew tap caskroom/fonts && brew tap caskroom/cask
+brew cask install iterm2-beta google-drive suspicious-package google-chrome skype vlc-nightly flux caffeine alfred clamxav mou cheatsheet knockknock blockblock appcleaner
