@@ -8,4 +8,7 @@ alias saptar="sudo apt-get autoremove"
 alias saptdu="sudo apt-get dist-upgrade"
 alias saptac="sudo apt-get autoclean"
 alias sapts="sudo apt-cache search"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 ' >> ~/.bash_aliases

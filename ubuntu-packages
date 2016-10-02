@@ -1,0 +1,61 @@
+vim
+git
+curl
+python
+python-pip
+python3
+python3-pip
+droopy
+npm
+nodejs-legacy
+mongodb
+tmux
+aptitude
+# tweak tools for installed DE
+ mate-tweak
+qtile
+# google-chrome - via the deb package online
+thunderbird
+vlc
+# nightengale - from the website
+dropbox
+# gimp ?
+gstreamer0.10-plugins-ugly
+gxine 
+libdvdread4 
+icedax 
+tagtool 
+easytag 
+id3tool 
+lame 
+nautilus-script-audio-convert 
+libmad0 
+mpg321 
+gstreamer1.0-libav
+flashplugin-installer
+utorrent
+unace 
+unrar 
+zip 
+unzip 
+p7zip-full 
+p7zip-rar 
+sharutils 
+rar 
+uudeview 
+mpack 
+arj 
+cabextract
+file-roller
+# java
+ icedtea-java7-jdk 
+ icedtea-java7-jre 
+ icedtea-java7-plugin
+apt-fast
+terminator / guake
+# terminal utils
+  undistract-me
+  smem
+  powertop
+gparted
+flashplugin-nonfree
