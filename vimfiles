@@ -1,8 +1,4 @@
 # install vim
-  # Mac - must have brew
-  brew install vim
-  # ubuntu | linux mint
-  sudo apt-get install vim
 
 # install pathogen
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
@@ -103,3 +99,7 @@ let g:user_emmet_leader_key='<C-e>'
 " line wrapping
 set breakindent showbreak=..
 set linebreak
+
+" save line folds
+au BufWinLeave ?* silent! mkview
+au BufWinEnter ?* silent! loadview
