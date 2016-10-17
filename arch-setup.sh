@@ -64,7 +64,7 @@
 ## add user to sudoers
 # visudo ## uncomment %wheel ALL=(ALL) ALL
 
-pacman -S python python2 python-pip python2-pip git perl python-setuptools python-pip mpdecimal xz tk python2-setuptools python2-pip
+sudo pacman -S python python2 python-pip python2-pip git perl python-setuptools python-pip mpdecimal xz tk python2-setuptools python2-pip
 # bashrc
 echo '
 # nice things

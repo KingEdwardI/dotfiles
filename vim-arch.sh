@@ -1,5 +1,5 @@
 # install vim and dependencies
-pacman -S vim curl
+sudo pacman -S vim curl
 
 # make directories
 mkdir ~/.vim
