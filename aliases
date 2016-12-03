@@ -1,0 +1,24 @@
+alias la="ls -a"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias su="sudo -i"
+alias rmd="rm -rf"
+alias cls="clear"
+alias vim="nvim"
+
+alias droplet="ssh eddie@45.55.164.120"
+
+alias upbrew="brew update && brew upgrade"
+
+alias chrome="open -a Google\ Chrome"
+alias toop="clear && ls"
+
+alias gitp="git pull"
+alias gitP="git push"
+alias gitc="git commit -a"
+alias gita="git add"
+alias gitcp="git commit -a && git push"
+alias gitrm="git rm"
+alias gitAA="git add ."
