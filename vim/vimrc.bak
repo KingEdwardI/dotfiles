@@ -1,5 +1,68 @@
-" Config
+""""""""""""
+" Vim-Plug "
+""""""""""""
+call plug#begin('~/.vim/bundle/')
 
+" global
+Plug 'tpope/vim-sensible'
+Plug 'tpope/vim-sleuth'
+Plug 'lambdalisue/gina.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'taohex/lightline-buffer'
+Plug 'jiangmiao/auto-pairs'
+Plug 'gregsexton/matchtag'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'scrooloose/nerdcommenter'
+Plug 'ervandew/supertab'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'mtth/scratch.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'w0rp/ale'
+Plug 'vim-scripts/bufkill.vim'
+Plug 'craigemery/vim-autotag'
+Plug 'majutsushi/tagbar'
+Plug 'ashisha/image.vim'
+" Plug 'wesQ3/vim-windowswap'
+Plug 't9md/vim-choosewin'
+Plug 'eugen0329/vim-esearch'
+Plug 'jeetsukumaran/vim-buffergator'
+Plug 'Shougo/neosnippet'
+Plug 'Shougo/neosnippet-snippets'
+Plug 'honza/vim-snippets'
+" Syntax
+Plug 'ihacklog/hicursorwords'
+Plug 'shougo/deoplete.nvim'
+Plug 'dNitro/vim-pug-complete'
+Plug 'zchee/deoplete-go'
+Plug 'vimoutliner/vimoutliner'
+Plug 'HerringtonDarkholme/yats.vim'
+" HTML
+Plug 'othree/html5.vim', { 'for' : 'html'}
+Plug 'mattn/emmet-vim'
+" Python
+Plug 'nathanaelkane/vim-indent-guides', { 'for' : 'python' }
+Plug 'zchee/deoplete-jedi', { 'for' : 'python' }
+Plug 'davidhalter/jedi-vim', { 'for' : 'python' }
+" JavaScript
+Plug 'ternjs/tern_for_vim'
+Plug 'carlitux/deoplete-ternjs', { 'for' : 'javascript' }
+Plug 'moll/vim-node', { 'for' : 'javascript' }
+Plug 'pangloss/vim-javascript', { 'for' : [ 'javascript', 'javascript.jsx', 'vue', 'pug' ] }
+Plug 'mustache/vim-mustache-handlebars', { 'for' : [ 'javascript', 'stache' ] }
+Plug 'digitaltoad/vim-pug', { 'for' : 'pug' }
+Plug 'posva/vim-vue', { 'for' : [ 'javascript', 'vue' ] }
+Plug 'mxw/vim-jsx', { 'for' : [ 'javascript', 'javascript.jsx' ] }
+
+call plug#end()            " required
+
+filetype plugin indent on    " required
+
+"""""""""""
+" Vanilla "
+"""""""""""
 set tabstop=2
 set shiftwidth=2
 " 4 space tabs for cc
@@ -51,89 +114,6 @@ command! HTMLfix execute "!tidy -mi -html -wrap 0 %"
 
 nmap <F8> :TagbarToggle<CR>
 
-set encoding=utf8
-
-""""""""""""
-" Vim-Plug "
-""""""""""""
-call plug#begin('~/.vim/bundle/')
-
-" Global
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-sleuth'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-salve'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-dispatch'
-Plug 'tpope/vim-fireplace'
-" Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'scrooloose/nerdcommenter'
-Plug 'lambdalisue/gina.vim'
-Plug 'majutsushi/tagbar'
-Plug 'craigemery/vim-autotag'
-Plug 'wesQ3/vim-windowswap'
-Plug 't9md/vim-choosewin'
-Plug 'ervandew/supertab'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'mtth/scratch.vim'
-Plug 'eugen0329/vim-esearch'
-Plug 'vim-scripts/bufkill.vim'
-Plug 'jeetsukumaran/vim-buffergator'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-Plug 'godlygeek/tabular'
-Plug 'ryanoasis/vim-devicons'
-Plug 'dkprice/vim-easygrep'
-
-" Snippets
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'Shougo/neosnippet'
-Plug 'Shougo/neosnippet-snippets'
-Plug 'zchee/deoplete-go'
-
-" Syntax
-Plug 'ihacklog/hicursorwords'
-Plug 'shougo/deoplete.nvim'
-Plug 'pangloss/vim-javascript'
-Plug 'mustache/vim-mustache-handlebars'
-
-" UI
-Plug 'itchyny/lightline.vim'
-Plug 'taohex/lightline-buffer'
-
-" General Programming
-Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/nerdcommenter'
-
-" Linting
-Plug 'w0rp/ale'
-
-" HTML
-Plug 'gregsexton/matchtag'
-Plug 'othree/html5.vim', { 'for' : 'html'}
-Plug 'mattn/emmet-vim'
-
-" Python
-Plug 'nathanaelkane/vim-indent-guides', { 'for' : 'python' }
-Plug 'zchee/deoplete-jedi', { 'for' : 'python' }
-Plug 'davidhalter/jedi-vim', { 'for' : 'python' }
-
-" JavaScript
-Plug 'ternjs/tern_for_vim'
-Plug 'carlitux/deoplete-ternjs'
-Plug 'moll/vim-node', { 'for' : 'javascript' }
-Plug 'digitaltoad/vim-pug', { 'for' : 'pug' }
-Plug 'posva/vim-vue', { 'for' : [ 'javascript', 'vue' ] }
-Plug 'mxw/vim-jsx', { 'for' : [ 'javascript', 'javascript.jsx' ] }
-
-call plug#end()            " required
-
-filetype plugin indent on    " required
-
 """""""""""""
 " NERD Tree "
 """""""""""""
@@ -144,7 +124,7 @@ let g:NERDTreeShowHidden=1
 " toggle menu
 map <C-t><C-n> :NERDTreeToggle<CR>
 " close vim if menu is the only thing open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 " File Highligting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
@@ -161,11 +141,6 @@ call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('py', 'Magenta', 'none', '#ff00ff', '#151515')
-
-""""""""""
-" Tagbar "
-""""""""""
-map <C-m> :TagbarToggle<CR>
 
 """"""""""""""""""
 " NERD Commenter "
@@ -233,16 +208,9 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_color_change_percent = 3
 let g:indent_guides_enable_on_vim_startup = 1
 
-""""""""""""
-" Deoplete "
-""""""""""""
+" Deoplete completion
 call deoplete#enable()
-" g:deoplete#enable_at_startup = 1
-let g:python3_host_prog  = '/usr/local/bin/python3'
-
-"""""""""
-" Emmet "
-"""""""""
+" Emmet
 let g:user_emmet_leader_key='<C-e>'
 
 
@@ -296,7 +264,6 @@ map <Leader>html :r~/.vim/snippets/html5.html<CR>
 map <Leader>jsfor :r~/.vim/snippets/for.js<CR>
 map <Leader>vwp :r~/.vim/snippets/vue_webpack_boilerplate.vue<CR>
 map <Leader>vsf :r~/.vim/snippets/vue_single_file.vue<CR>
-map <Leader>mr :r~/.vim/snippets/mongoErr.mongo<CR>
 
 
 nnoremap <Leader>th :tabprevious<CR>
@@ -307,6 +274,14 @@ nnoremap <Leader>tn :tabnext<CR>
 """"""""""""""
 
 let g:bufferline_echo = 0
+
+""""""""""""""
+" WindowSwap "
+""""""""""""""
+" let g:windowswap_map_keys = 0 "prevent default bindings
+" nnoremap <silent> <leader>.u :call WindowSwap#EasyWindowSwap()<CR>
+" nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
+" nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
 
 """""""""""""
 " ChooseWin "
@@ -325,94 +300,5 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
       \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 " For conceal markers.
 if has('conceal')
-  set conceallevel=1 concealcursor=niv
+  set conceallevel=2 concealcursor=niv
 endif
-
-"""""""""""""
-" Ultisnips "
-"""""""""""""
-" Trigger configuration.
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger='<c-b>'
-let g:UltiSnipsJumpBackwardTrigger='<c-z>'
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit='vertical'
-
-"""""""
-" FZF "
-"""""""
-set rtp+=/usr/local/opt/fzf
-
-""""""""""""
-" Devicons "
-""""""""""""
-set guifont=Sauce_Code_Powerline:h11
-" change the default character when no match found
-" let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = 'ƛ'
-" " set a byte character marker (BOM) utf-8 symbol when retrieving file encoding
-" " disabled by default with no value
-" let g:WebDevIconsUnicodeByteOrderMarkerDefaultSymbol = ''
-" " enable folder/directory glyph flag (disabled by default with 0)
-" let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-" " enable open and close folder/directory glyph flags (disabled by default with 0)
-" let g:DevIconsEnableFoldersOpenClose = 1
-" " enable pattern matching glyphs on folder/directory (enabled by default with 1)
-" let g:DevIconsEnableFolderPatternMatching = 1
-" " enable file extension pattern matching glyphs on folder/directory (disabled by default with 0)
-" let g:DevIconsEnableFolderExtensionPatternMatching = 0
-" " enable custom folder/directory glyph exact matching 
-" " (enabled by default when g:WebDevIconsUnicodeDecorateFolderNodes is set to 1)
-" let g:WebDevIconsUnicodeDecorateFolderNodesExactMatches = 1
-" " change the default folder/directory glyph/icon
-" let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = 'ƛ'
-" " change the default open folder/directory glyph/icon (default is '')
-" let g:DevIconsDefaultFolderOpenSymbol = 'ƛ'
-" " change the default dictionary mappings for file extension matches
-
-" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
-" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['js'] = 'ƛ'
-" " change the default dictionary mappings for exact file node matches
-
-" let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols = {} " needed
-" let g:WebDevIconsUnicodeDecorateFileNodesExactSymbols['MyReallyCoolFile.okay'] = 'ƛ'
-" " add or override individual additional filetypes
-
-" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols = {} " needed
-" let g:WebDevIconsUnicodeDecorateFileNodesExtensionSymbols['myext'] = 'ƛ'
-" " add or override pattern matches for filetypes
-" " these take precedence over the file extensions
-
-" let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols = {} " needed
-" let g:WebDevIconsUnicodeDecorateFileNodesPatternSymbols['.*jquery.*\.js$'] = 'ƛ'
-
-let g:lightline = {
-      \ 'component_function': {
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
-      \ }
-      \ }
-
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
-
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
-""""""""""""""""""""""""
-" Vim Multiple Cursors "
-""""""""""""""""""""""""
-" Called once right before you start selecting multiple cursors
-function! Multiple_cursors_before()
-  if exists(':NeoCompleteLock')==2
-    exe 'NeoCompleteLock'
-  endif
-endfunction
-
-" Called once only when the multiple selection is canceled (default <Esc>)
-function! Multiple_cursors_after()
-  if exists(':NeoCompleteUnlock')==2
-    exe 'NeoCompleteUnlock'
-  endif
-endfunction

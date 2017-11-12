@@ -1,14 +1,16 @@
-# terminal niceties
-purple=$(tput setaf 5)
-reset=$(tput sgr 0)
-echo "Greetings, Your Majesty"
-export PS1='[ \[$purple\]\u \w\[$reset\] ]\$ '
+export PS1="\nᏜ \w இ King Edward\n∷» "
+export PS2="| => "
 
-# Terminal colorscheme
-export CLICOLOR=1
+. "$HOME/.aliases"
+
+
+PROMPT_DIRTRIM=2
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export EDITOR=/usr/bin/vim
 
-PROMPT_DIRTRIM=2 # for bash v4.0+
+# PATH #
+export PATH=$PATH:/Users/KingEdward/.fzf/bin
+export PATH=$PATH:/usr/local/bin/jsctags
+export PATH=$PATH:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
 
-# login to portfolio droplet
-alias droplet="ssh eddie@45.55.164.120"
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

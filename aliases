@@ -1,1 +1,55 @@
-/Users/KingEdward/.aliases
+# file management
+alias la="ls -a"
+alias ls-="ls"
+alias l="ls -al"
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ..5="cd ../../../.."
+alias ..6="cd ../../../../.."
+alias rmd="rm -rf"
+alias toop="clear && ls"
+alias vimrc="vim ~/.vimrc"
+alias cls="clear"
+
+# general aliases
+alias py3="python3"
+alias droplet="ssh kingedward@104.236.153.86"
+alias pyxm="$HOME/.pyxm/pyxm_2_0/pyxm/pyxm.py"
+alias src="source ~/.aliases && echo 'sourced rc'"
+
+# Mac specific
+alias su="sudo -i"
+if [[ $0 == "-zsh" ]]; then
+    alias vim="nvim"
+fi
+alias ixm="instantmusic"
+alias camelot="ssh kedward@10.0.0.10"
+alias upbrew="brew update && brew upgrade"
+alias chrome="open -a Google\ Chrome"
+alias DB="sudo mongod"
+
+# git commands
+alias gs="git status"
+alias gd="git diff"
+alias gl="git log"
+alias gp="git pull"
+alias gb="git branch"
+alias gcl="git clone"
+alias gsh="git stash"
+alias gc="git commit -a"
+alias ga="git add"
+alias grm="git rm"
+alias gAA="git add -A"
+alias gck="git checkout"
+alias gm="git merge"
+alias gpo="git push origin"
+alias gpom="git push origin master"
+
+# CC
+alias initcc="git config user.email eddie@codecraftschool.com && git config user.name cc-eddie"
+alias ccport="ssh -i ~/.ssh/id_rsa.pub codecraftstudent@corbett.dreamhost.com"
+alias spaceship="ssh root@104.236.162.204"
+alias serve="python -m SimpleHTTPServer 7200"
+
+alias vkill="pkill -KILL ctags"
