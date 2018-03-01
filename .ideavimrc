@@ -1,0 +1,53 @@
+" Config
+
+set tabstop=2
+set shiftwidth=2
+" 4 space tabs for cc
+:autocmd BufRead,BufNewFile,BufEnter /Users/KingEdward/codecraft/* setlocal ts=4 sw=4
+set expandtab
+" turn on the mouse
+set mouse=a
+" turn on line numbers
+set number
+" line number color
+hi LineNr ctermfg=darkgrey
+set breakindent showbreak=┕-→
+set linebreak
+
+syntax on
+
+" jump instead of next
+no j n
+no J N
+" end of line
+no - $
+" beginning of line
+no _ ^
+" kill line (wrap up)
+no k J
+
+map bt :bnext<CR>
+map bT :bprevious<CR>
+
+let mapleader = ","
+
+map h <Left>
+map t <Up>
+map T 8<Up>
+map n <Down>
+map N 8<Down>
+map s <Right>
+inoremap hh <ESC>
+
+set surround
+
+map ,R :action Run<CR>
+map ,f :action ReformatCode<CR>
+map ,rn :action Refactorings.QuickListPopupAction<CR>
+map ,cc :action CommentByLineComment<CR>
+map ,cs :action CommentByBlockComment<CR>
+map ,term :action ActivateTerminalToolWindow<CR>
+map ,git :action Vcs.QuickListPopupAction<CR>
+map ,touch :action NewFile<CR>
+map ,mkdir :action NewDir<CR>
+
