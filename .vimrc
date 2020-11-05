@@ -376,7 +376,6 @@ Plug 'prettier/vim-prettier', {
 \    'scss', 
 \    'json', 
 \    'graphql', 
-\    'markdown', 
 \    'vue', 
 \    'yaml', 
 \    'html'
@@ -384,6 +383,16 @@ Plug 'prettier/vim-prettier', {
 \}
 " let g:prettier#autoformat = 0
 " autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
+
+"=======================
+"
+
+" vim-markdown - A vim plugin for editing markdown files
+" https://github.com/gabrielelana/vim-markdown
+Plug 'gabrielelana/vim-markdown', { 'for': ['markdown'] }
+
+"=======================
+"
 
 call plug#end()            " required
 
