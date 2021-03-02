@@ -391,8 +391,24 @@ Plug 'prettier/vim-prettier', {
 " https://github.com/gabrielelana/vim-markdown
 Plug 'gabrielelana/vim-markdown', { 'for': ['markdown'] }
 
+
 "=======================
 "
+
+" vim-gutentags - tag management for vim
+" https://github.com/ludovicchabant/vim-gutentags
+Plug 'ludovicchabant/vim-gutentags'
+
+"=======================
+"
+
+" fzf - vim fuzzy finder
+" https://github.com/junegunn/fzf
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+"=======================
+"
+
 
 call plug#end()            " required
 
