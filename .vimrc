@@ -159,9 +159,9 @@ nmap  <Leader>cwT  <Plug>(choosewin)[<CR>
 
 " deoplete - autocompletion
 " https://github.com/Shougo/deoplete.nvim
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 "=======================
 
@@ -222,14 +222,14 @@ Plug 'jiangmiao/auto-pairs'
 
 " ultisnips - a snippet engine for vim
 " https://github.com/SirVer/ultisnips
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger='<c-b>'
-let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+"let g:UltiSnipsExpandTrigger='<tab>'
+"let g:UltiSnipsJumpForwardTrigger='<c-b>'
+"let g:UltiSnipsJumpBackwardTrigger='<c-z>'
  
 " If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit='vertical'
+"let g:UltiSnipsEditSplit='vertical'
 
 "=======================
 
