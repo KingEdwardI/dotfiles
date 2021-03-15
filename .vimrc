@@ -159,9 +159,10 @@ nmap  <Leader>cwT  <Plug>(choosewin)[<CR>
 
 " deoplete - autocompletion
 " https://github.com/Shougo/deoplete.nvim
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 "=======================
 
