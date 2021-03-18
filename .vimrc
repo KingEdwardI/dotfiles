@@ -223,14 +223,14 @@ Plug 'jiangmiao/auto-pairs'
 
 " ultisnips - a snippet engine for vim
 " https://github.com/SirVer/ultisnips
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 
-let g:UltiSnipsExpandTrigger='<tab>'
-let g:UltiSnipsJumpForwardTrigger='<c-b>'
-let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+" let g:UltiSnipsExpandTrigger='<tab>'
+" let g:UltiSnipsJumpForwardTrigger='<c-b>'
+" let g:UltiSnipsJumpBackwardTrigger='<c-z>'
  
 " If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit='vertical'
+" let g:UltiSnipsEditSplit='vertical'
 
 "=======================
 
@@ -283,6 +283,7 @@ Plug 'dense-analysis/ale'
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['prettier', 'eslint'],
 \}
 
 " Set this variable to 1 to fix files when you save them.
@@ -293,6 +294,8 @@ let g:ale_sign_column_always = 1
 
 let g:ale_sign_error = '××'
 let g:ale_sign_warning = '☼☼'
+
+map <leader>p :ALEFix<CR>
 
 
 " jumping between errors
@@ -343,7 +346,7 @@ Plug 'davidhalter/jedi-vim', { 'for' : 'python' }
 
 " deoplete-jedi - deoplete for jedi
 " https://github.com/deoplete-plugins/deoplete-jedi
-Plug 'deoplete-plugins/deoplete-jedi', { 'for' : 'python' }
+" Plug 'deoplete-plugins/deoplete-jedi', { 'for' : 'python' }
 
 "=======================
 
@@ -405,11 +408,25 @@ Plug 'ludovicchabant/vim-gutentags'
 
 " fzf - vim fuzzy finder
 " https://github.com/junegunn/fzf
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 "=======================
 "
 
+" startify - a fancy start screen for vim!
+" https://github.com/mhinz/vim-startify
+Plug 'mhinz/vim-startify'
+
+"=======================
+"
+
+" vim-which-key - provides a popup menu for available hotkeys
+" https://github.com/liuchengxu/vim-which-key
+Plug 'liuchengxu/vim-which-key'
+
+nnoremap <silent> <leader> :WhichKey ','<CR>
+set timeoutlen=500
 
 call plug#end()            " required
 
