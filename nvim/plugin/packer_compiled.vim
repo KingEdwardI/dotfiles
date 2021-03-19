@@ -32,14 +32,50 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
-  ["auto-pairs"] = {
+  ["FixCursorHold.nvim"] = {
     loaded = true,
-    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/auto-pairs"
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim"
+  },
+  ["fern-git-status.vim"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/fern-git-status.vim"
+  },
+  ["fern-renderer-nerdfont.vim"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/fern-renderer-nerdfont.vim"
+  },
+  ["fern.vim"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/fern.vim"
+  },
+  fzf = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/fzf"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/fzf.vim"
+  },
+  ["lexima.vim"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/lexima.vim"
+  },
+  ["nerdfont.vim"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/nerdfont.vim"
+  },
+  ["nvim-compe"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/nvim-compe"
   },
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/opt/packer.nvim"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-commentary"
   },
   ["vim-dispatch"] = {
     loaded = true,
@@ -48,6 +84,14 @@ _G.packer_plugins = {
   ["vim-dispatch-neovim"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-dispatch-neovim"
+  },
+  ["vim-mark"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-mark"
+  },
+  ["vim-matchup"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-matchup"
   },
   ["vim-repeat"] = {
     loaded = true,
@@ -68,6 +112,14 @@ _G.packer_plugins = {
   ["vim-visual-multi"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-visual-multi"
+  },
+  ["vim-vsnip"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vim-which-key"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-which-key"
   }
 }
 

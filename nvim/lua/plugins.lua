@@ -10,10 +10,12 @@ end
 
 vim.cmd([[packadd packer.nvim]])
 
-vim.cmd('autocmd BufWritePost plugins.lua PackerCompile') -- Auto compile when there are changes in plugins.lua
+-- vim.cmd('autocmd BufWritePost lua/** PackerCompile') -- Auto compile when there are changes in plugins.lua
 
 return require('packer').startup(function()
   use {'wbthomason/packer.nvim', opt=true}
+
+  -- Section - General
 
   --[[ 
   -- vim-surround - provides mappings to easily delete, change and add such surroundings in pairs.
@@ -40,17 +42,18 @@ return require('packer').startup(function()
   --]]
   use 'tpope/vim-dispatch'
 
+  --[[
+  -- vim-commentary - easy commenting
+  -- https://github.com/tpope/vim-commentary
+  --]]
+  use 'tpope/vim-commentary'
+  require('vim-commentary')
+
   --[[ 
   -- vim-dispatch-neovim - adds support for neovim's terminal emulator to vim-dispatch
   -- https://github.com/radenling/vim-dispatch-neovim#dispatch-neovim
   --]]
   use 'radenling/vim-dispatch-neovim'
-  
-  --[[
-  -- vim-signify - adds git highlighting to the line number
-  -- https://github.com/mhinz/vim-signify
-  --]]
-  use 'mhinz/vim-signify'
 
   --[[
   -- vim-visual-multi - multiple cursors
@@ -58,7 +61,104 @@ return require('packer').startup(function()
   --]]
   use 'mg979/vim-visual-multi'
 
-  -- https://github.com/jiangmiao/auto-pairs
-  use 'jiangmiao/auto-pairs'
+  --[[
+  -- vim-matchup - extends the `%` command
+  -- https://github.com/andymass/vim-matchup
+  --]]
+  use 'andymass/vim-matchup'
+
+  --[[
+  -- fzf - vim fuzzy finder
+  -- https://github.com/junegunn/fzf
+  --]]
+  use 'junegunn/fzf'
+  use 'junegunn/fzf.vim'
+  require('fzf')
+
+  --[[
+  -- TODO: galaxyline
+  -- https://github.com/glepnir/galaxyline.nvim
+  --]]
+  --[[
+  use {
+    'glepnir/galaxyline.nvim',
+    branch = 'main'
+  }
+  --]]
+
+  --[[
+  -- lexima.vim - autocomplete brackets, quotes, etc.
+  -- https://github.com/cohama/lexima.vim
+  --]]
+  use 'cohama/lexima.vim'
+
+  --[[
+  -- vim_current_word - highlight matches to the word under the cursor
+  -- https://github.com/dominikduda/vim_current_word 
+  --]]
+  use 'dominikduda/vim_current_word'
+
+  --[[
+  -- nvim-compe - Auto completion plugin for nvim
+  -- https://github.com/hrsh7th/nvim-compe
+  --]]
+  use 'hrsh7th/nvim-compe'
+  use 'hrsh7th/vim-vsnip'
+
+  --[[
+  -- vim-which-key - display available keybindings in a popup
+  -- https://github.com/liuchengxu/vim-which-key
+  --]]
+  use 'liuchengxu/vim-which-key'
+  require('vim-which-key')
+
+  --[[
+  -- vim-startify - a fancy start screen
+  -- https://github.com/mhinz/vim-startify
+  ]]
+  use 'mhinz/vim-startify'
+
+  --[[
+  -- nvim-tree - file explorer tree
+  -- https://github.com/kyazdani42/nvim-tree.lua
+  --]]
+  -- use 'kyazdani42/nvim-web-devicons' -- for file icons
+  -- use 'kyazdani42/nvim-tree.lua'
+  -- require('nvim-tree')
+  --[[
+  -- fern - file explorer tree
+  -- https://github.com/lambdalisue/fern.vim
+  --]]
+  use 'lambdalisue/fern.vim'
+  use 'antoinemadec/FixCursorHold.nvim' -- fix for neovim issues
+  use 'lambdalisue/nerdfont.vim'
+  use 'lambdalisue/fern-renderer-nerdfont.vim'
+  use 'lambdalisue/fern-git-status.vim'
+  require('fern')
+
+  --[[
+  -- ale - asynchronous lint engine
+  -- https://github.com/dense-analysis/ale
+  ]]
+  -- use 'dense-analysis/ale'
+  -- require('ale')
+
+  -- EndSection - General
+
+  -- Section - Git
+  
+  --[[
+  -- vim-signify - adds git highlighting to the line number
+  -- https://github.com/mhinz/vim-signify
+  --]]
+  use 'mhinz/vim-signify'
+
+  -- EndSection - Git
+  
+  -- Section - LSP
+
+  -- use 'neovim/nvim-lspconfig'
+
+  -- EndSection - LSP
 
 end)

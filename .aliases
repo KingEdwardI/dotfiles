@@ -31,6 +31,16 @@ alias grm="git rm"
 alias gAA="git add -A"
 alias gck="git checkout"
 alias gm="git merge"
-alias gpo="git push origin $(git branch --show-current)"
-alias gpf="git push --set-upstream origin $(git branch --show-current)"
+# alias gpo () { git push origin $(git branch --show-current) }
+# alias gpf () { git push --set-upstream origin $(git branch --show-current) }
 alias gpom="git push origin master"
+
+# Makes new directory and jumps inside
+mcd () { mkdir -p "$1" && cd "$1"; }
+
+# Full Recursive Directory Listing
+alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'' | less'
+
+# Create a zip archive of a folder
+zipf () { zip -r "$1".zip "$1" ; }
+

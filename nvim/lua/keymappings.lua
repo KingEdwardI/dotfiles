@@ -10,12 +10,12 @@ vim.api.nvim_set_keymap('', 's', '<Right>', {})
 vim.api.nvim_set_keymap('i', 'hh', '<Esc>', { noremap = true })
 
 -- jump instead of next
-vim.api.nvim_set_keymap('n', 'j', 'n', { noremap = true })
-vim.api.nvim_set_keymap('n', 'J', 'N', { noremap = true })
+vim.api.nvim_set_keymap('', 'j', 'n', { noremap = true })
+vim.api.nvim_set_keymap('', 'J', 'N', { noremap = true })
 
 -- beginning / end of line
-vim.api.nvim_set_keymap('n', '-', '$', { noremap = true })
-vim.api.nvim_set_keymap('n', '_', '^', { noremap = true })
+vim.api.nvim_set_keymap('', '-', '$', { noremap = true })
+vim.api.nvim_set_keymap('', '_', '^', { noremap = true })
 
 -- kill line (wrap up)
 vim.api.nvim_set_keymap('n', 'k', 'J', { noremap = true })
