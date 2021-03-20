@@ -56,6 +56,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/fzf.vim"
   },
+  ["galaxyline.nvim"] = {
+    config = { "\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22galaxyline-config\frequire\0" },
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+  },
   ["lexima.vim"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/lexima.vim"
@@ -67,6 +72,10 @@ _G.packer_plugins = {
   ["nvim-compe"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = false,
@@ -85,10 +94,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-dispatch-neovim"
   },
-  ["vim-mark"] = {
-    loaded = true,
-    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-mark"
-  },
   ["vim-matchup"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-matchup"
@@ -105,6 +110,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-sleuth"
   },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-startify"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-surround"
@@ -120,9 +129,15 @@ _G.packer_plugins = {
   ["vim-which-key"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-which-key"
+  },
+  vim_current_word = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim_current_word"
   }
 }
 
+-- Config for: galaxyline.nvim
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22galaxyline-config\frequire\0", "config", "galaxyline.nvim")
 END
 
 catch

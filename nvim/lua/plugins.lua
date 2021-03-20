@@ -104,6 +104,7 @@ return require('packer').startup(function()
   --]]
   use 'hrsh7th/nvim-compe'
   use 'hrsh7th/vim-vsnip'
+  -- require('nvim-compe.main')
 
   --[[
   -- vim-which-key - display available keybindings in a popup
@@ -136,12 +137,26 @@ return require('packer').startup(function()
   use 'lambdalisue/fern-git-status.vim'
   require('fern')
 
+  -- TODO: do I need ale with LSP?
   --[[
   -- ale - asynchronous lint engine
   -- https://github.com/dense-analysis/ale
   ]]
   -- use 'dense-analysis/ale'
   -- require('ale')
+  
+  --[[
+  -- galaxyline - fancy status line
+  -- https://github.com/glepnir/galaxyline.nvim
+  --]]
+  use {
+  'glepnir/galaxyline.nvim',
+    branch = 'main',
+    -- your statusline
+    config = function() require('galaxyline-config') end,
+    -- some optional icons
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
 
   -- EndSection - General
 
