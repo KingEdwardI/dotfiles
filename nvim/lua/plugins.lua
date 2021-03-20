@@ -168,6 +168,7 @@ return require('packer').startup(function()
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
   -- TODO: better keybindings
+  --  - don't treat buffers like tabs (or something like that)
 
   use 'neovim/nvim-lspconfig'
 
