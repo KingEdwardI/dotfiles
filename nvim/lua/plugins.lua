@@ -91,6 +91,7 @@ return require('packer').startup(function()
   -- https://github.com/cohama/lexima.vim
   --]]
   use 'cohama/lexima.vim'
+  require('lexima')
 
   --[[
   -- vim_current_word - highlight matches to the word under the cursor
@@ -104,7 +105,8 @@ return require('packer').startup(function()
   --]]
   use 'hrsh7th/nvim-compe'
   use 'hrsh7th/vim-vsnip'
-  -- require('nvim-compe.main')
+  use 'hrsh7th/vim-vsnip-integ'
+  require('nvim-compe')
 
   --[[
   -- vim-which-key - display available keybindings in a popup
@@ -154,9 +156,20 @@ return require('packer').startup(function()
     branch = 'main',
     -- your statusline
     config = function() require('galaxyline-config') end,
-    -- some optional icons
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
+
+  --[[
+  -- barbar - fancy tabline
+  -- https://github.com/romgrk/barbar.nvim
+  ]]
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+  }
+  -- TODO: better keybindings
+
+  use 'neovim/nvim-lspconfig'
 
   -- EndSection - General
 
@@ -169,11 +182,5 @@ return require('packer').startup(function()
   use 'mhinz/vim-signify'
 
   -- EndSection - Git
-  
-  -- Section - LSP
-
-  -- use 'neovim/nvim-lspconfig'
-
-  -- EndSection - LSP
 
 end)

@@ -36,6 +36,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/barbar.nvim"
+  },
   ["fern-git-status.vim"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/fern-git-status.vim"
@@ -72,6 +76,10 @@ _G.packer_plugins = {
   ["nvim-compe"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/nvim-compe"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -125,6 +133,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  ["vim-vsnip-integ"] = {
+    loaded = true,
+    path = "/Users/edward.vetterdrake/.local/share/nvim/site/pack/packer/start/vim-vsnip-integ"
   },
   ["vim-which-key"] = {
     loaded = true,

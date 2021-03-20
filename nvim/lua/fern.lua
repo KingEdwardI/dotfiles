@@ -1,5 +1,6 @@
 vim.g.cursorhold_updatetime = 100 -- neovim fix
 
+-- TODO: open to cwd instead of current file
 vim.api.nvim_set_keymap('n', '<C-t><C-t>', ':Fern . -drawer -reveal=%<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-t><C-o>', ':Fern . -drawer -reveal=%<CR> -stay', { noremap = true })
 vim.g['fern#default_hidden'] = 1
